@@ -1,0 +1,7 @@
+Prose	
+0 - 'Poor or not done';
+2 - 'Many issues';
+4 - 'Acceptable';
+6 - 'Exceptional'	
+
+All aspects of submission should be free of noticeable typos, spelling mistakes, and be grammatically correct. Prose should be coherent, concise, clear, and mature. Remove unnecessary words. Do not use the following words/phrases: 'advanced', 'all-encompassing', 'apt', 'backdrop', 'beg the question', 'bridge/s the/a gap', comprehensive', 'critical', 'crucial', 'data-driven', 'delve/s', 'drastic', 'drives forward', 'elucidate/ing', 'embark/s', 'exploration', 'fill that/the/a gap', 'fresh perspective/s', 'hidden factor/s', 'imperative', 'insights from', 'insight/s', 'interrogate', 'intricate', 'intriguing', 'key insights', 'kind of', 'leverage', 'meticulous/ly', 'multifaceted', 'novel', 'nuance', 'offers/ing crucial insight', 'plummeted', 'profound', 'rapidly', 'reveals', 'shed/s light', 'shocking', 'soared', 'unparalleled', 'unveiling', 'valuable', 'wanna'.

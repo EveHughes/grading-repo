@@ -1,0 +1,6 @@
+Title	
+0 - 'Poor or not done';
+1 - 'Yes';
+2 - 'Exceptional'	
+
+An informative title is included that explains the story, and ideally tells the reader what happens at the end of it. 'Paper X' is not an informative title. Use a subtitle to convey the main finding. Do not use puns (you can break this rule once you're experienced).

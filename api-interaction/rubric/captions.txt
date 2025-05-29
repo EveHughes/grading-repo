@@ -1,0 +1,6 @@
+Captions	
+0 - 'Poor or not done';
+1 - 'Acceptable';
+2 - 'Excellent'
+
+All figures and tables have detailed and meaningful captions. They should be sufficiently detailed so as to make the main point of the figure/table clear even without the accompanying text. Do not say 'Histogram of...' or whatever else the figure type is.

@@ -1,0 +1,5 @@
+Author, date, and repo	
+0 - 'Poor or not done';
+2 - 'Yes'	
+
+The author, date of submission in unambiguous format, and a link to a GitHub repo are clearly included. (The later likely, but not necessarily, through a statement such as: 'Code and data supporting this analysis is available at: LINK').

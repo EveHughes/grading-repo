@@ -1,0 +1,7 @@
+Tests	
+0 - 'Poor or not done';
+2 - 'Acceptable';
+3 - 'Impressive';
+4 - 'Exceptional'	
+
+High-quality extensive suites of tests are written for the both the simulated and actual datasets. These suites must be in separate scripts. The suite should be extensive and put together in a sophisticated way using packages like testthat, validate, pointblank, or great expectations.

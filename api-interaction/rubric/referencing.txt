@@ -1,0 +1,6 @@
+Referencing	
+0 - 'Poor or not done';
+3 - 'One minor issue';
+4 - 'Perfect'	
+
+All data, software, literature, and any other relevant material, should be cited in-text and included in a properly formatted reference list made using BibTeX. A few lines of code from Stack Overflow or similar, would be acknowledged just with a comment in the script immediately preceding the use of the code rather than here. But larger chunks of code should be fully acknowledged with an in-text citation and appear in the reference list. Check in-text citations and that you have not accidentally used (@my_cite) when you needed [@my_cite]. R packages and all other aspects should be correctly capitalized, and name should be correct e.g. use double braces appropriately in the BibTeX file.

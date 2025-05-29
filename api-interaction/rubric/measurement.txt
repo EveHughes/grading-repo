@@ -1,0 +1,7 @@
+Measurement	
+0 - 'Poor or not done';
+2 - 'Some issues';
+3 - 'Acceptable';
+4 - 'Exceptional'	
+
+A thorough discussion of measurement, relating to the dataset, is provided in the data section. Please ensure that you explain how we went from some phenomena in the world that happened to an entry in the dataset that you are interested in.

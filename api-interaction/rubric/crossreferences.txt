@@ -1,0 +1,5 @@
+Cross-references	
+0 - 'Poor or not done';
+1 - 'Yes'	
+
+All figures, tables, and equations, should be numbered, and referred to in the text using cross-references. The telegraphing paragraph in the introduction should cross reference the rest of the paper.

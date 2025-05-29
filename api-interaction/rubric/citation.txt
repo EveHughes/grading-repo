@@ -1,0 +1,5 @@
+Python cited	
+0 - 'No';
+1 - 'Yes'	
+
+Python is properly referenced in the main content and in the reference list. If not, then paper gets 0 overall.

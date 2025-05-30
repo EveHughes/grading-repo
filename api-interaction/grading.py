@@ -74,7 +74,7 @@ def grade():
         if len(criterion_result) == 3 and criterion_result[1].isnumeric():
             numerical_result[criterion_result[0]] = criterion_result[1]
             comment_result[criterion_result[0]] = criterion_result[2]
-            print(criterion_result[1], criterion_result[2])
+            print(criterion_result)
         elif len(criterion_result) != 3:
             print(f"Error with rubric category {criterion}, split wrong")
         else:

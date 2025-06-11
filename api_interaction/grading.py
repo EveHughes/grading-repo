@@ -19,7 +19,7 @@ def read_prompt(i):
 #reads in rubric as a dictionary
 def read_rubric():
     rubric = {}
-    path = Path(__file__).parent / ("rubric")
+    path = Path(__file__).parent / ("input/rubric")
     for file in path.iterdir():
         if file.is_file():
             try:
@@ -175,7 +175,7 @@ def grade():
     
     #updates the csvs
     to_response_csv(numerical_result, comment_result)
-    update_history_csv(numerical_result)
+    #update_history_csv(numerical_result)
     return (numerical_result, comment_result)
 
 

@@ -14,10 +14,10 @@ from download import *
 
 def grader(task, rubric, repo_link):
     ui.notify('Calculating grade')
-        # download(repo_link)
-        # save_task(task)
-        # save_rubric(rubric)
-        # grade()
+    # download(repo_link)
+    # save_task(task)
+    # save_rubric(rubric)
+    # grade()
 
     path = Path(__file__).resolve().parent.parent
     df = pl.read_csv(path / "api_interaction/output/response.csv")

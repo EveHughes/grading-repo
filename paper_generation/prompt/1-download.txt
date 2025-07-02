@@ -45,4 +45,3 @@ for idx, resource in enumerate(package["result"]["resources"]):
 for file_name in files:
     print(resource_name)
     files[file_name].to_csv(f"data/raw_data/{file_name}.csv", index=False)
-

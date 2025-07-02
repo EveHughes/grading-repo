@@ -91,12 +91,12 @@ def to_response_csv(numerical_result, comment_result):
         dic["comment"].append(comment_result[criterion])
     df = pl.DataFrame(dic)
 
-    path = Path(__file__).parent / ("output/response.csv")
+    path = Path(__file__).parent.parent / ("result/response.csv")
     df.write_csv(path)
 
 #handles reading in history csv, may be empty
 def read_history_csv(categories):
-    path = Path(__file__).parent / ("output/history.csv")
+    path = Path(__file__).parent.paper / ("result/history.csv")
     try:
         df = pl.read_csv(path)
         # do some transformation with the dataframe
@@ -121,7 +121,7 @@ def update_history_csv(numerical_result):
         total += score
     df["Total"].append(total)
 
-    path = Path(__file__).parent / ("output/history.csv")
+    path = Path(__file__).parent.parent / ("response/history.csv")
     df = pl.DataFrame(df)
     df.write_csv(path)
     

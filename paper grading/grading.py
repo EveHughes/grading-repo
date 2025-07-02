@@ -2,7 +2,6 @@ import openai
 from pathlib import Path
 import polars as pl
 
-CATEGORIES = ["Download", "Clean", "Comments", "Caption", "Figure", "Sentence", "Total"]
 
 ### READING IN FILES ###
 #get key
@@ -170,4 +169,3 @@ if __name__ == "__main__":
    result = grade()
    #prints the numerical results
    print(result[0])
- 

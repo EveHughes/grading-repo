@@ -1,0 +1,5 @@
+Data Graphs and Summary Statistics 
+0 - 'Poor or not done';
+2 - 'Done'
+
+ It is important to understand what the variables look like by including graphs, and possibly tables, of all observations, along with discussion of those graphs and the other features of these data. Summary statistics should also be included, and well as any relationships between the variables. 

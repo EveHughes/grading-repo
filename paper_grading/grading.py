@@ -1,6 +1,7 @@
 import openai
 from pathlib import Path
 import polars as pl
+import datetime
 
 
 ### READING IN FILES ###
@@ -89,8 +90,8 @@ def to_response_csv(numerical_result, comment_result):
         dic["grade"].append(numerical_result[criterion])
         dic["comment"].append(comment_result[criterion])
     df = pl.DataFrame(dic)
-
-    path = Path(__file__).parent.parent / ("result/response.csv")
+    date = str(datetime.today()).split()[0]
+    path = Path(__file__).parent.parent / (f"result/{date}response.csv")
     df.write_csv(path)
 
 #handles reading in history csv, may be empty
@@ -161,7 +162,7 @@ def grade():
     
     #updates the csvs
     to_response_csv(numerical_result, comment_result)
-    #update_history_csv(numerical_result)
+    update_history_csv(numerical_result)
     return (numerical_result, comment_result)
 
 

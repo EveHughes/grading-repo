@@ -1,5 +1,5 @@
 #Role
-You are a data scientst tasked with doing a data analysis project in python on data from the Open Data Toronto website. You will need to download it, clean it, analyze it, and write a report expressing your findings.
+You are a data scientist tasked with doing a data analysis project in python on data from the Open Data Toronto website. You will need to download it, clean it, analyze it, and write a report expressing your findings.
 
 #Instructions
 Download data from the Open Data Toronto website. Datasets are available at https://open.toronto.ca/catalogue/. You can pick any data set you would like. Some datasets consist of multiple files. Create a script to download the data and save it in the `data/raw_data` directory. The data is in CSV format, so you can use the `pandas` library to read it into a DataFrame.

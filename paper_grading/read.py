@@ -3,8 +3,7 @@
 # Author: Evelyn Hughes
 # Date: 04 July 2025
 # Contact: evelyn.hughes@utoronto.ca
-# Pre-requisites: 
-  # - `polars` must be installed (pip install polars)
+# Pre-requisites: None
 
 from pathlib import Path
 

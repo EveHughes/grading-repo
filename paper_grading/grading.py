@@ -8,6 +8,7 @@
   # - `key.txt' file must be create and contain valid OpenAI API key
 
 import openai
+from datetime import datetime
 
 from read import read_project, read_prompt, read_rubric
 from write import update_history_csv, to_response_csv
@@ -43,7 +44,7 @@ def grade(project_name):
     numerical_result = {}
     comment_result = {}
 
-    #calls the grader
+    #calls the grader on each criterion in the rubric -- criterion is name of file of category in rubric folder
     for criterion in rubric:
         print(f"Grading criterion: {criterion}")
         #loop to ensure that the grading is done correctly
@@ -67,8 +68,9 @@ def grade(project_name):
                 print(f"Error with rubric category {criterion}, second entry not a number")
     
     #updates the csvs
-    to_response_csv(numerical_result, comment_result)
-    update_history_csv(numerical_result)
+    time = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
+    to_response_csv(time, numerical_result, comment_result)
+    update_history_csv(time, numerical_result)
     return (numerical_result, comment_result)
 
 

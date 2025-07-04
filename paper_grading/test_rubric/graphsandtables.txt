@@ -1,0 +1,8 @@
+Graphs and tables	
+0 - 'Poor or not done';
+1 - 'Some issues';
+2 - 'Acceptable';
+3 - 'Impressive';
+4 - 'Exceptional'	
+
+Graphs and tables must be included in the paper and should be to well-formatted, clear, and digestible. Graphs should be made using ggplot2 and tables should be made using tinytable. They should serve a clear purpose and be fully self-contained. Graphs and tables should be appropriately sized, colored, and labelled. Variable names should not be used as labels. Tables should have an appropriate number of decimal places and use comma separators for thousands. Don't use boxplots, but if you must then you must overlay the actual data.

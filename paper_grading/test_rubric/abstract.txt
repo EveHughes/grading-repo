@@ -1,0 +1,8 @@
+Abstract	
+0 - 'Poor or not done';
+1 - 'Some issues';
+2 - 'Acceptable';
+3 - 'Impressive';
+4 - 'Exceptional'	
+
+An abstract is included and appropriately pitched to a non-specialist audience. The abstract answers: 1) what was done, 2) what was found, and 3) why this matters (all at a high level). Likely four sentences. Abstract must make clear what we learn about the world because of this paper.

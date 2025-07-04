@@ -1,0 +1,5 @@
+Criterion,Score,Comment
+abstract.txt,4,"The abstract is clear, concise, and excellently targeted to a non-specialist audience. It addresses what was done, what was found, and why it matters, providing high-level insights into trends in respiratory outbreaks and their implications for healthcare."
+graphsandtables.txt,1,"The graphs and tables included in the paper are clear and labeled, but they were not made using ggplot2 or tinytable as required. Furthermore, variable names are used as labels, and the data formatting does not meet best practices for tables."
+reproducible.txt,2,"The project demonstrates good structure, proper use of seeds, and includes a preamble for each script. However, the README file is absent, hard-coded paths are used (""data/...""), and there is no information about excluding unnecessary files or handling branches effectively."
+Total,7,Sum of all rubric scores

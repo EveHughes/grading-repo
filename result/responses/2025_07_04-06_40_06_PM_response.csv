@@ -1,0 +1,17 @@
+Criterion,Score,Comment
+abstract.txt,4,"The abstract is concise, clearly answers what was done, what was found, and why it matters, and is accessible to a non-specialist audience. It highlights the significance of the findings for healthcare policy."
+authordaterepo.txt,2,"The author, an unambiguous submission date, and a GitHub link to the project's code and data are all clearly included."
+captions.txt,2,"The captions across all tables and figures are detailed, meaningful, and make the main points clear, even without the accompanying text."
+citation.txt,1,Python is properly referenced in the main content and in the reference list.
+crossreferences.txt,1,"All figures, tables, and equations are appropriately referenced and numbered in the text, and the introduction uses cross-references to indicate the structure of the paper."
+data.txt,6,"The data section provides a clear overview of the dataset, including variables of interest and their relevance to the analysis. Aggregation and grouping of variables are explained. However, there is no explicit mention of similar datasets that were considered or rejected for use or detailed high-level cleaning processes for the raw data."
+graphsandtables.txt,1,"The tables and graphs are informative but have formatting and labeling issues. Variable names are used as labels, and the plots lack customization (e.g., ggplot2 was not used). Tools like tinytable were not employed, and the tables are not formatted with an appropriate number of decimal places or thousand separators."
+introduction.txt,4,"The introduction is comprehensive and provides a clear context, motivation, gap, objectives, findings, importance, and structure, enabling the reader to understand the entire paper from this section alone."
+measurement.txt,4,"The project includes a thorough discussion in the data section, explaining how healthcare facility outbreaks were categorized and reported, and it even examines limitations like detection biases and potential reporting issues."
+prose.txt,6,"The prose is clear, concise, and free of noticeable typos or grammatical errors. The writing is mature and does not utilize unnecessary or prohibited phrases."
+referencing.txt,4,"All references to literature, software, datasets, and other resources are cited appropriately in-text and properly formatted in the reference list using BibTeX. There are no errors in citation style or formatting, and lowercase capitalizations like in R packages were respected."
+reproducible.txt,2,"The project includes well-documented code with preambles and comments but lacks a detailed README file. There are unnecessary files, hard-coded paths, and the absence of information on dealing with GitHub issues or branches."
+summarystats.txt,2,"The project includes multiple graphs, tables, and summary statistics. It discusses overall trends and relationships between variables effectively, fulfilling expectations for this category."
+tests.txt,2,"The project includes separate test files for the simulated and actual datasets and covers basic tests for data integrity, types, and totals. However, the tests are not extensive or sophisticated and do not use advanced testing frameworks like testthat, validate, pointblank, or great expectations."
+title.txt,2,"The title and subtitle are highly informative, describing the study's focus and summarizing the key finding concisely."
+Total,43,Sum of all rubric scores

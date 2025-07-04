@@ -1,0 +1,8 @@
+Reproducible workflow	
+0 - 'Poor or not done';
+1 - 'Some issues';
+2 - 'Acceptable';
+3 - 'Impressive';
+4 - 'Exceptional'	
+
+Use an organized repo with a detailed README and a Python project. Thoroughly document code and include a preamble, comments, nice structure, and style code with styler or lintr. Use seeds appropriately. Avoid leaving install.packages() in the code unless handled sophisticatedly. Exclude unnecessary files from the repo; avoid hard-coded paths and setwd(). Use base pipe not magrittr pipe. Comment on and close all GitHub issues. Deal with all branches.

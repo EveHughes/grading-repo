@@ -8,17 +8,29 @@
   # - `key.txt' file must be create and contain valid OpenAI API key
 
 import openai
+import time
 from datetime import datetime
 
 from read import read_project, read_prompt, read_rubric
 from write import update_history_csv, to_response_csv
 
+#read in key info
+with open('azure_key.txt', 'r') as file:
+    lines = file.readlines()
+    azure_api_key = lines[0].strip()
+    azure_endpoint = lines[1].strip()
+
+# Set up Azure OpenAI client
+client = openai.AzureOpenAI(
+    api_key=azure_api_key,
+    api_version="2024-02-15-preview",
+    azure_endpoint=azure_endpoint
+)
+
 #grades project for a specific rubric criterion
 def grade_criterion(project_component, criterion, prompt):
-    client = openai.OpenAI(api_key = my_key)
-
     response = client.chat.completions.create(
-        model="gpt-4",
+        model = "ijf-gpt-4o",
         messages=[
             {"role": "system", 
              "content": prompt
@@ -27,7 +39,10 @@ def grade_criterion(project_component, criterion, prompt):
              "content": f"""
                 project: {project_component}
                 rubric: {criterion}
-                Return first the rubric category, then the score, and then a comment of your justification, each seperated by a semicolon." """
+                Return first the rubric category, then only the score, and then a comment of your justification, each seperated by a semicolon."
+                Do not include any additional spaces after semicolons.
+                Example:
+                reproducible.txt;3;The project has a clear README file with instructions for reproducing the results, but lacks a requirements.txt file for dependencies."""
             }
         ],
         max_tokens = 300
@@ -55,6 +70,7 @@ def grade(project_name):
                 criterion_result = grade_criterion(project["Scripts"], rubric[criterion], prompt)
 
             criterion_result = criterion_result.split(";")
+            print(f"Criterion result: {criterion_result}")
 
             #prints the grade and comment & breaks, or prints an error message
             if len(criterion_result) == 3 and criterion_result[1].isnumeric():
@@ -64,13 +80,15 @@ def grade(project_name):
                 break
             elif len(criterion_result) != 3:
                 print(f"Error with rubric category {criterion}, split wrong")
+                time.sleep(5)
             else:
                 print(f"Error with rubric category {criterion}, second entry not a number")
+                time.sleep(5)
     
     #updates the csvs
-    time = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
-    to_response_csv(time, numerical_result, comment_result)
-    update_history_csv(time, numerical_result)
+    date_time = datetime.now().strftime("%Y_%m_%d-%I_%M_%S_%p")
+    to_response_csv(date_time, numerical_result, comment_result)
+    update_history_csv(date_time, numerical_result)
     return (numerical_result, comment_result)
 
 
